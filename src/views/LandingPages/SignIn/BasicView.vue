@@ -10,6 +10,9 @@ import MaterialInput from "@/components/MaterialInput.vue";
 import MaterialSwitch from "@/components/MaterialSwitch.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 
+import vueMkHeader from "@/assets/img/fondo-3.jpeg";
+
+
 // material-input
 import setMaterialInput from "@/assets/js/material-input";
 onMounted(() => {
@@ -23,7 +26,7 @@ onMounted(() => {
       class="page-header align-items-start min-vh-100"
       :style="{
         backgroundImage:
-          'url(https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80)'
+        `url(${vueMkHeader})`
       }"
       loading="lazy"
     >
@@ -41,7 +44,7 @@ onMounted(() => {
                   <h4
                     class="text-white font-weight-bolder text-center mt-2 mb-0"
                   >
-                    Sign in
+                    Acceso
                   </h4>
                   <div class="row mt-3">
                     <div class="col-2 text-center ms-auto">
@@ -117,10 +120,10 @@ onMounted(() => {
                 © {{ new Date().getFullYear() }}, made with
                 <i class="fa fa-heart" aria-hidden="true"></i> by
                 <a
-                  href="https://www.creative-tim.com"
+                  href="https://www.yovanenovore.tech"
                   class="font-weight-bold text-white"
                   target="_blank"
-                  >Creative Tim</a
+                  >Creative yovanenovore</a
                 >
                 for a better web.
               </div>
@@ -131,7 +134,7 @@ onMounted(() => {
               >
                 <li class="nav-item">
                   <a
-                    href="https://www.creative-tim.com"
+                    href=""
                     class="nav-link text-white"
                     target="_blank"
                     >Creative Tim</a
@@ -139,7 +142,7 @@ onMounted(() => {
                 </li>
                 <li class="nav-item">
                   <a
-                    href="https://www.creative-tim.com/presentation"
+                    href="/presentation"
                     class="nav-link text-white"
                     target="_blank"
                     >About Us</a
@@ -147,7 +150,7 @@ onMounted(() => {
                 </li>
                 <li class="nav-item">
                   <a
-                    href="https://www.creative-tim.com/blog"
+                    href="/blog"
                     class="nav-link text-white"
                     target="_blank"
                     >Blog</a
@@ -155,7 +158,7 @@ onMounted(() => {
                 </li>
                 <li class="nav-item">
                   <a
-                    href="https://www.creative-tim.com/license"
+                    href="/license"
                     class="nav-link pe-0 text-white"
                     target="_blank"
                     >License</a

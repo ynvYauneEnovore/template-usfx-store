@@ -47,7 +47,7 @@ const router = createRouter({
       component: AuthorView,
     },
     {
-      path: "/pages/landing-pages/basic",
+      path: "/login",
       name: "signin-basic",
       component: SignInBasicView,
     },
